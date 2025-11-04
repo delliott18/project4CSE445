@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Hotel> <!-- Error wrong root element name -->
+  <Hotel id="H001" Rating="4.2">
+    <Name>Westin</Name>
+    <Phone>480-968-8885</Phone>
+    <Phone>800-937-8461</Phone>
+    <Address>
+      <Number>11</Number>
+      <Street>E 7th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Habor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.4"> <!-- Error missing required id attribute -->
+    <Name>Omni Tempe Hotel at ASU</Name>
+    <!-- Error (3): no Phone element at all -->
+    <Address>
+      <Number>7</Number>
+      <Street>E University Dr</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+    </Address>
+  </Hotel>
+
+  <Hotel id="H003">
+    <!-- Error duplicate Name elements -->
+    <Name>Graduate Tempe</Name>
+    <Name>Graduate Tempe (Duplicate)</Name>
+    <Phone>480-967-9431</Phone>
+    <!-- Error Address missing closing tag -->
+    <Address>
+      <Number>225</Number>
+      <Street>E Apache Blvd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+      <NearestAirport>Sky Harbor</NearestAirport>
+  </Hotel>
+</Hotel>
